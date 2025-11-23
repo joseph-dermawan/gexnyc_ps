@@ -1,0 +1,191 @@
+body {
+  background-color: #0E0E0E;
+  color: #EAEAEA;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0E0E0E; 
+}
+::-webkit-scrollbar-thumb {
+  background: #3C3C3C; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6600; 
+}
+
+.text-glow {
+  text-shadow: 0 0 5px #D94A00, 0 0 10px #FF6600, 0 0 20px #FF6600;
+}
+
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Glitch Effect - Hero Section */
+.glitch-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.glitch-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  animation: glitch-anim 4s infinite linear alternate-reverse;
+  background-image: url("asset/sunset.png"); /* Subtle noise texture for glitch */
+  background-size: cover;
+  display: none; 
+}
+
+/* Only show glitch on larger screens or specific containers */
+.glitch-active .glitch-layer {
+  display: block;
+}
+
+@keyframes glitch-anim {
+  0% { clip-path: inset(40% 0 61% 0); transform: translate(-2px, 1px); }
+  20% { clip-path: inset(92% 0 1% 0); transform: translate(1px, -1px); }
+  40% { clip-path: inset(43% 0 1% 0); transform: translate(-1px, 2px); }
+  60% { clip-path: inset(25% 0 58% 0); transform: translate(2px, 1px); }
+  80% { clip-path: inset(54% 0 7% 0); transform: translate(-2px, -1px); }
+  100% { clip-path: inset(58% 0 43% 0); transform: translate(1px, 2px); }
+}
+
+/* Polaroid Advanced Glitch Hover Effect */
+.polaroid-hover .polaroid-img-wrapper {
+  position: relative;
+  /* Ensure overlay stays within image bounds */
+}
+
+/* Dynamic Overlay for Splash Colors */
+.polaroid-hover .polaroid-img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: none;
+}
+
+/* Hover States triggers */
+.polaroid-hover:hover .polaroid-img-wrapper::after {
+  animation: glitch-overlay-flash 4s infinite;
+}
+
+.polaroid-hover:hover img {
+  animation: glitch-move-invert 4s infinite;
+}
+
+/* Keyframes for the Overlay Splashes - MOVEMENT REMOVED, DURATION EXTENDED */
+@keyframes glitch-overlay-flash {
+  0% { opacity: 0; background-color: transparent; }
+  
+  /* Orange Nixie Splash - Longer Duration */
+  10% { opacity: 0; }
+  12% { opacity: 0.6; background-color: #FF6600; mix-blend-mode: hard-light; }
+  25% { opacity: 0.6; background-color: #FF6600; mix-blend-mode: hard-light; } /* Hold Orange */
+  28% { opacity: 0; }
+  
+  /* Dark Inversion Splash */
+  55% { opacity: 0; }
+  56% { opacity: 0.8; background-color: #000000; mix-blend-mode: difference; } 
+  58% { opacity: 0; }
+  
+  100% { opacity: 0; }
+}
+
+/* Keyframes for Inversion - NO MOVEMENT */
+@keyframes glitch-move-invert {
+  0% { filter: invert(0); }
+  
+  /* Inversion Sync - aligned with dark splash */
+  56% { filter: invert(1); }
+  58% { filter: invert(0); }
+  
+  100% { filter: invert(0); }
+}
+
+/* Photo Glitch Effect (Section 1) */
+.glitch-photo {
+  position: relative;
+  overflow: hidden;
+}
+.glitch-photo::before,
+.glitch-photo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  mix-blend-mode: hard-light;
+}
+.glitch-photo:hover::before {
+  opacity: 0.6;
+  animation: glitch-skew-img 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  filter: hue-rotate(90deg);
+  transform: translate(-5px, 0);
+}
+.glitch-photo:hover::after {
+  opacity: 0.6;
+  animation: glitch-skew-img 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  filter: hue-rotate(-90deg);
+  transform: translate(5px, 0);
+}
+
+/* For Firefox */
+.invisible-scrollbar-color {
+  scrollbar-color: #0E0E0E #0E0E0E; 
+  scrollbar-width: thin; 
+}
+
+/* For Chrome, Safari, and Opera */
+.invisible-scrollbar-color::-webkit-scrollbar {
+  height: 6px; 
+}
+
+.invisible-scrollbar-color::-webkit-scrollbar-track {
+  background: #0E0E0E; 
+}
+
+.invisible-scrollbar-color::-webkit-scrollbar-thumb {
+  background-color: #0E0E0E; 
+}
+
+@keyframes glitch-skew-img {
+  0% { clip-path: inset(10% 0 80% 0); }
+  20% { clip-path: inset(60% 0 10% 0); }
+  40% { clip-path: inset(30% 0 30% 0); }
+  60% { clip-path: inset(80% 0 5% 0); }
+  80% { clip-path: inset(10% 0 60% 0); }
+  100% { clip-path: inset(40% 0 20% 0); }
+}
