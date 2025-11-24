@@ -260,7 +260,7 @@ const App = () => {
           {
             isQuote: true
           },
-          "New York\u2019s industrial grid once produced the goods that built its identity. These buildings served as engines\u2014material, utilitarian, and unromantic. Memory begins in function, not in form."
+          "New York\u2019s industrial grid once produced the goods that built its identity. These buildings served as engines\u2014material and utilitarian. Memory begins in function and embedded on the urban landscape."
         )
       ),
       // React.createElement(FilmStrip, null)
@@ -502,7 +502,7 @@ const App = () => {
             isQuote: true,
             alignment: "center"
           },
-          "Authenticity is preserved, edited, and monetized\u2014the past reframed as an asset in the global cultural marketplace."
+          "Authenticity is preserved, edited, and monetized. The past reframed as a commodity in the global cultural marketplace."
         )
       )
     ),
