@@ -27,7 +27,7 @@ const App = () => {
           className: "glitch-layer"
         }),
         React.createElement("img", {
-          src: "/asset/hero-bg.jpg",
+          src: "/public/asset/hero-bg.jpg",
           alt: "Industrial Texture",
           className: "w-full h-full object-cover opacity-30"
         }),
@@ -347,7 +347,7 @@ const App = () => {
               "CURRENT"
             ),
             React.createElement("img", {
-              src: "/asset/panel2.1.2.jpg",
+              src: "/public/asset/panel2.1.2.jpg",
               className: "w-full h-[300px] md:h-[400px] object-cover border border-gray-800 shadow-2xl",
               alt: "New Aerial"
             })
@@ -465,7 +465,7 @@ const App = () => {
         ))
       ),
       React.createElement("img", {
-          src: "/asset/panel3.2.jpg",
+          src: "/public/asset/panel3.2.jpg",
           className: "w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700",
           alt: "Corporate Lobby"
         }),
@@ -481,7 +481,7 @@ const App = () => {
             className: "max-w-2xl w-full px-4"
           },
           React.createElement(Polaroid, {
-            src: "/asset/panel3.3.jpg",
+            src: "/public/asset/panel3.3.jpg",
             alt: "Final Product",
             caption: "The past reframed as an product.",
             location: "Global Capital",
@@ -561,7 +561,7 @@ const App = () => {
             {
               className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
               style: {
-                backgroundImage: 'url("/asset/panel4.0.1.jpg")',
+                backgroundImage: 'url("/public/asset/panel4.0.1.jpg")',
               }
             }
           ),
@@ -618,8 +618,8 @@ const App = () => {
           React.createElement(Polaroid, {
             src: "/asset/panel4.2.2.jpg",
             alt: "Retail",
-            location: "Old in New",
-            caption: "Old-school industry surviving in increasingly different city than the one it was built for.",
+            location: "Meatpacking's resilience in Chelsea",
+            caption: "An industry, built for a different time, thrives and coexists within the sleek, new landscape of global capital.",
             aspectRatio: "portrait",
             filter: "none",
             className: "bg-black border-gray-900"
@@ -661,7 +661,7 @@ const App = () => {
           React.createElement(
             "h4",
             {
-              className: "font-mono text-center text-xs text-neonOrange mb-6 tracking-widest"
+              className: "font-mono text-center text-xs text-offwhite mb-6 tracking-widest"
             },
             "MEMORY  \u2022  SPACE  \u2022  GLOBAL CITY"
           ),
