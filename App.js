@@ -27,7 +27,7 @@ const App = () => {
           className: "glitch-layer"
         }),
         React.createElement("img", {
-          src: "/asset/hero-bg.jpg",
+          src: "../asset/hero-bg.jpg",
           alt: "Industrial Texture",
           className: "w-full h-full object-cover opacity-30"
         }),
@@ -149,19 +149,19 @@ const App = () => {
           /* Film Frames */
           [
             {
-              src: "/asset/panel1.1.1.jpg",
+              src: "../asset/panel1.1.1.jpg",
               title: "Production"
             },
             {
-              src: "/asset/panel1.1.2.jpg",
+              src: "../asset/panel1.1.2.jpg",
               title: "Exhaust"
             },
             {
-              src: "/asset/panel1.1.3.jpg",
+              src: "../asset/panel1.1.3.jpg",
               title: "Structure"
             },
             {
-              src: "/asset/panel1.1.4.jpg",
+              src: "../asset/panel1.1.4.jpg",
               title: "Facade"
             },
           ].map((img, i) => React.createElement(
@@ -213,7 +213,7 @@ const App = () => {
             {
               className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
               style: {
-                backgroundImage: 'url("/asset/panel1.2.3.jpg")',
+                backgroundImage: 'url("../asset/panel1.2.3.jpg")',
               }
             }
           ),
@@ -326,7 +326,7 @@ const App = () => {
               "ARCHIVAL"
             ),
             React.createElement("img", {
-              src: "/asset/panel2.1.1.jpg",
+              src: "../asset/panel2.1.1.jpg",
               className: "w-full h-[300px] md:h-[400px] object-cover grayscale filter contrast-125 border border-gray-800",
               alt: "Old Aerial"
             })
@@ -347,7 +347,7 @@ const App = () => {
               "CURRENT"
             ),
             React.createElement("img", {
-              src: "/asset/panel2.1.2.jpg",
+              src: "../asset/panel2.1.2.jpg",
               className: "w-full h-[300px] md:h-[400px] object-cover border border-gray-800 shadow-2xl",
               alt: "New Aerial"
             })
@@ -360,7 +360,7 @@ const App = () => {
             className: "grid md:grid-cols-2 gap-6 md:gap-8 mb-12"
           },
           React.createElement(Polaroid, {
-            src: "/asset/panel2.2.2.jpg",
+            src: "../asset/panel2.2.2.jpg",
             alt: "Machinery",
             location: "Rebrand",
             caption: "Machinery left behind. A new function.",
@@ -369,7 +369,7 @@ const App = () => {
             className: "bg-black border-gray-800"
           }),
           React.createElement(Polaroid, {
-            src: "asset/panel2.2.1.jpg",
+            src: "../asset/panel2.2.1.jpg",
             alt: "Empty Loft",
             location: "Reassigned",
             caption: "Metal beams and exposed brick, from structure to aesthetic.",
@@ -405,7 +405,7 @@ const App = () => {
           className: "absolute inset-0 bg-black/40 z-10"
         }),
         React.createElement("img", {
-          src: "asset/panel3.1.jpg",
+          src: "../asset/panel3.1.jpg",
           className: "w-full h-full object-cover grayscale",
           alt: "Corporate Lobby"
         }),
@@ -444,10 +444,10 @@ const App = () => {
           className: "grid grid-cols-2 md:grid-cols-4 gap-0"
         },
         [
-          "asset/panel3.1.4.jpeg",
-          "asset/panel3.1.2.jpg",
-          "asset/panel3.1.3.jpg",
-          "asset/panel3.1.1.jpg"
+          "../asset/panel3.1.4.jpeg",
+          "../asset/panel3.1.2.jpg",
+          "../asset/panel3.1.3.jpg",
+          "../asset/panel3.1.1.jpg"
         ].map((src, idx) => React.createElement(
           "div",
           {
@@ -465,7 +465,7 @@ const App = () => {
         ))
       ),
       React.createElement("img", {
-          src: "asset/panel3.2.jpg",
+          src: "../asset/panel3.2.jpg",
           className: "w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700",
           alt: "Corporate Lobby"
         }),
@@ -481,9 +481,9 @@ const App = () => {
             className: "max-w-2xl w-full px-4"
           },
           React.createElement(Polaroid, {
-            src: "asset/panel3.3.jpg",
+            src: "../asset/panel3.3.jpg",
             alt: "Final Product",
-            caption: "The past reframed as an asset.",
+            caption: "The past reframed as an product.",
             location: "Global Capital",
             aspectRatio: "portrait",
             rotation: "rotate-0",
@@ -561,7 +561,7 @@ const App = () => {
             {
               className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
               style: {
-                backgroundImage: 'url("/asset/panel4.0.1.jpg")',
+                backgroundImage: 'url("../asset/panel4.0.1.jpg")',
               }
             }
           ),
@@ -606,7 +606,7 @@ const App = () => {
           },
           /* Lived City */
           React.createElement(Polaroid, {
-            src: "asset/panel4.2.1.jpg",
+            src: "../asset/panel4.2.1.jpg",
             alt: "Local Market",
             location: "Rebuilt for Modern Life",
             caption: "Aestheticized history, gentrified streets.",
@@ -616,7 +616,7 @@ const App = () => {
           }),
           /* Staged City - Staggered */
           React.createElement(Polaroid, {
-            src: "asset/panel4.2.2.jpg",
+            src: "../asset/panel4.2.2.jpg",
             alt: "Retail",
             location: "Old in New",
             caption: "Old-school industry surviving in increasingly different city than the one it was built for.",
