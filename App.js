@@ -27,7 +27,7 @@ const App = () => {
           className: "glitch-layer"
         }),
         React.createElement("img", {
-          src: "/public/asset/hero-bg.jpg",
+          src: "/asset/hero-bg.jpg",
           alt: "Industrial Texture",
           className: "w-full h-full object-cover opacity-30"
         }),
@@ -347,7 +347,7 @@ const App = () => {
               "CURRENT"
             ),
             React.createElement("img", {
-              src: "/public/asset/panel2.1.2.jpg",
+              src: "/asset/panel2.1.2.jpg",
               className: "w-full h-[300px] md:h-[400px] object-cover border border-gray-800 shadow-2xl",
               alt: "New Aerial"
             })
@@ -465,7 +465,7 @@ const App = () => {
         ))
       ),
       React.createElement("img", {
-          src: "/public/asset/panel3.2.jpg",
+          src: "/asset/panel3.2.jpg",
           className: "w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700",
           alt: "Corporate Lobby"
         }),
@@ -481,7 +481,7 @@ const App = () => {
             className: "max-w-2xl w-full px-4"
           },
           React.createElement(Polaroid, {
-            src: "/public/asset/panel3.3.jpg",
+            src: "/asset/panel3.3.jpg",
             alt: "Final Product",
             caption: "The past reframed as an product.",
             location: "Global Capital",
@@ -561,7 +561,7 @@ const App = () => {
             {
               className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
               style: {
-                backgroundImage: 'url("/public/asset/panel4.0.1.jpg")',
+                backgroundImage: 'url("/asset/panel4.0.1.jpg")',
               }
             }
           ),
