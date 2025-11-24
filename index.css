@@ -51,7 +51,7 @@ body {
   opacity: 0.5;
   mix-blend-mode: hard-light;
   animation: glitch-anim 4s infinite linear alternate-reverse;
-  background-image: url("asset/sunset.png"); /* Subtle noise texture for glitch */
+  background-image: url("/asset/sunset.png"); /* Subtle noise texture for glitch */
   background-size: cover;
   display: none; 
 }
