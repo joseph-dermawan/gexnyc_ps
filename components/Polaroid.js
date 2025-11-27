@@ -5,6 +5,8 @@ const Polaroid = ({
   alt,
   caption,
   location,
+  // *** CHANGE 1: Accept the new filename prop ***
+  filename, 
   rotation = "rotate-0",
   className = "",
   aspectRatio = "square",
@@ -36,21 +38,40 @@ const Polaroid = ({
     React.createElement(
       "div",
       {
-        className: "flex flex-col justify-between min-h-[3rem]"
+        // *** CHANGE 2: Modify class to use flex row for side-by-side layout ***
+        // Changed from flex-col to flex-row justify-between items-end
+        className: "flex flex-row justify-between items-end min-h-[3rem] border-t border-gray-800 pt-3 sm:pt-4 px-1"
       },
-      location && React.createElement(
-        "p",
+      // *** CHANGE 3A: Wrap Location/Caption into a new div (Left Side) ***
+      React.createElement(
+        "div",
         {
-          className: "font-mono text-[10px] uppercase tracking-[0.2em] text-neonOrange mb-1 border-b border-gray-800 pb-1 group-hover:border-neonOrange/50 transition-colors"
+          className: "flex flex-col flex-grow pr-4" // flex-grow to take up space, pr-4 for spacing
         },
-        location
+        location && React.createElement(
+          "p",
+          {
+            // Removed border-b and its padding since the border is now on the parent container
+            className: "font-mono text-[10px] uppercase tracking-[0.2em] text-neonOrange mb-1 transition-colors"
+          },
+          location
+        ),
+        caption && React.createElement(
+          "p",
+          {
+            className: "font-mono text-xs md:text-sm text-gray-300 leading-tight"
+          },
+          caption
+        )
       ),
-      caption && React.createElement(
-        "p",
+      
+      // *** CHANGE 3B: Add Filename Text (Right Side) ***
+      filename && React.createElement(
+        "div",
         {
-          className: "font-mono text-xs md:text-sm text-gray-300 leading-tight"
+          className: "hidden md:block font-mono text-[10px] text-gray-600 tracking-widest whitespace-nowrap"
         },
-        caption
+        filename
       )
     ),
     /* Decorative Overlay */

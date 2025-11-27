@@ -324,7 +324,7 @@ const App = () => {
               {
                 className: "absolute top-4 left-4 z-20 bg-black/70 px-3 py-1 text-xs font-mono text-gray-300 border border-gray-600"
               },
-              "ARCHIVAL"
+              "FRAME_06//Chelsea_Aerial (ARCHIVAL)"
             ),
             React.createElement("img", {
               src: "/asset/panel2.1.1.jpg",
@@ -345,7 +345,7 @@ const App = () => {
               {
                 className: "absolute top-4 left-4 z-20 bg-black/70 px-3 py-1 text-xs font-mono text-neonOrange border border-neonOrange/50"
               },
-              "CURRENT"
+              "FRAME_07 // Chelsea_Aerial (Current)"
             ),
             React.createElement("img", {
               src: "/asset/panel2.1.2.jpg",
@@ -367,16 +367,18 @@ const App = () => {
             caption: "Machinery left behind. A new function.",
             filter: "sepia",
             rotation: "rotate-0",
-            className: "bg-black border-gray-800"
+            className: "bg-black border-gray-800",
+            filename: "FRAME_08 // Chelsea_Machinery 2025 "
           }),
           React.createElement(Polaroid, {
             src: "/asset/panel2.2.1.jpg",
-            alt: "Empty Loft",
+            alt: "Beams",
             location: "Reassigned",
             caption: "Metal beams and exposed brick, from structure to aesthetic.",
             filter: "none",
             rotation: "rotate-0",
-            className: "bg-black border-gray-800"
+            className: "bg-black border-gray-800",
+            filename: "FRAME_09 // Chelsea_Beams 2025 "
           })
         ),
         React.createElement(
@@ -486,10 +488,11 @@ const App = () => {
             src: "/asset/panel3.4.1.jpg",
             alt: "Final Product - Past",
             caption: "What says history more than a Sephora in a former factory?",
-            location: "Commodified History 1",
+            location: "Repurposed Function",
             aspectRatio: "portrait",
             rotation: "rotate-0",
-            className: "transform scale-100 md:scale-100 bg-black"
+            className: "transform scale-100 md:scale-100 bg-black",
+            filename: "FRAME_16 // Chelsea_Sephora 2025 "
           }),
           
           // --- POLAROID 2 (New) ---
@@ -498,13 +501,131 @@ const App = () => {
             src: "/asset/panel3.4.2.jpg", 
             alt: "Final Product - Present",
             caption: "Historical structures become the anchor for a new, sleek identity.",
-            location: "Commodified History 2",
+            location: "Repurposed Architecture",
             aspectRatio: "portrait",
             rotation: "rotate-0",
-            className: "transform scale-100 md:scale-100 bg-black"
+            className: "transform scale-100 md:scale-100 bg-black",
+            filename: "FRAME_17 // Domino_VerticalGreen 2025 "
           })
         )
       ),
+        React.createElement(
+        "div",
+        {
+          className: "w-full mb-16 px-0"
+        },
+        React.createElement(
+          "div",
+          {
+            className: "w-full p-3 sm:p-6 border-y border-gray-800 shadow-xl group transform scale-[0.95] transition-all duration-500"
+          },
+          React.createElement(
+            "div",
+            {
+              className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
+              style: {
+                backgroundImage: 'url("/asset/panel4.6.jpg")',
+              }
+            }
+          ),
+          React.createElement(
+            "div",
+            {
+              className: "flex flex-row justify-between items-end border-t border-gray-800 pt-4 px-2"
+            },
+            React.createElement(
+              "div",
+              null,
+              React.createElement(
+                "p",
+                {
+                  className: "font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-neonOrange mb-1"
+                },
+                "Dumbo Legacy"
+              ),
+              React.createElement(
+                "p",
+                {
+                  className: "font-mono text-sm md:text-base text-gray-300 leading-tight"
+                },
+                ""
+              )
+            ),
+            React.createElement(
+              "div",
+              {
+                className: "hidden md:block font-mono text-[10px] text-gray-600 tracking-widest"
+              },
+              "FRAME_18 // Dumbo, 2025 "
+            )
+          )
+        )
+      ),
+                React.createElement(
+          "div",
+          {
+            className: "w-full bg-deepBlack border-y-4 border-charcoal py-4 my-16 relative overflow-hidden"
+          },
+          /* Sprocket Holes Top */
+          React.createElement("div", {
+            className: "absolute top-2 left-0 w-full h-4 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIj48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIGZpbGw9IiMxQzFBMUEiLz48L3N2Zz4=')] opacity-50"
+          }),
+          React.createElement(
+            "div",
+            {
+              className: "flex overflow-x-auto gap-0 px-0 py-8 snap-x snap-mandatory invisible-scrollbar-color items-center"
+            },
+            /* Film Frames */
+            [
+              {
+                src: "/asset/panel4.5.1.jpg",
+                title: "Empty Spaces Chelsea_01"
+              },
+              {
+                src: "/asset/panel4.5.3.jpg",
+                title: "Empty Spaces Chelsea_02"
+              },
+              {
+                src: "/asset/panel4.5.2.jpg",
+                title: "Empty Spaces Dumbo"
+              },
+              {
+                src: "/asset/panel4.5.4.jpg",
+                title: "Empty Spaces Domino"
+              },
+            ].map((img, i) => React.createElement(
+              "div",
+              {
+                key: i,
+                className: "snap-center shrink-0 w-[300px] md:w-[400px] px-2 md:px-4 relative group"
+              },
+              React.createElement(
+                "div",
+                {
+                  className: "bg-deepBlack p-4 border-x-4 border-charcoal"
+                },
+                /* Glitch Photo Container using background-image for pseudo-elements */
+                React.createElement("div", {
+                  className: "w-full aspect-[4/3] grayscale group-hover:grayscale-0 transition-all duration-500 glitch-photo bg-cover bg-center",
+                  style: {
+                    backgroundImage: `url(${img.src})`
+                  }
+                }),
+                React.createElement(
+                  "p",
+                  {
+                    className: "font-mono text-[10px] text-center mt-2 text-gray-600 group-hover:text-neonOrange"
+                  },
+                  `FRAME_${i + 19} // ${img.title}`
+                )
+              )
+            ))
+          ),
+          /* Sprocket Holes Bottom */
+          React.createElement("div", {
+            className: "absolute bottom-2 left-0 w-full h-4 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIj48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIGZpbGw9IiMxQzFBMUEiLz48L3N2Zz4=')] opacity-50"
+          })
+        ),
       React.createElement(
         "div",
         {
@@ -607,11 +728,12 @@ const App = () => {
               {
                 className: "hidden md:block font-mono text-[10px] text-gray-600 tracking-widest"
               },
-              "Chelsea Market, 2025"
+              "FRAME_23 // Chelsea Market, 2025 "
             )
           )
         )
       ),
+    
         /* Coexistence Montage - Converted to Polaroids */
         React.createElement(
           "div",
@@ -626,7 +748,8 @@ const App = () => {
             caption: "Aestheticized history, gentrified streets.",
             aspectRatio: "portrait",
             filter: "none",
-            className: "bg-black border-gray-900"
+            className: "bg-black border-gray-900",
+            filename: "FRAME_24 // Domino_Park 2025"
           }),
           /* Staged City - Staggered */
           React.createElement(Polaroid, {
@@ -636,7 +759,8 @@ const App = () => {
             caption: "An industry, built for a different time, thrives and coexists within the sleek, new landscape of global capital.",
             aspectRatio: "portrait",
             filter: "none",
-            className: "bg-black border-gray-900"
+            className: "bg-black border-gray-900",
+            filename: "FRAME_25 // Chelsea_Meatpacking 2025"
           })
         ),
         React.createElement(
@@ -686,7 +810,7 @@ const App = () => {
                 {
                   className: "hidden md:block font-mono text-[10px] text-gray-600 tracking-widest"
                 },
-                "New York, 2025"
+                "FRAME_26 // New_York 2025"
               )
             )
           )
