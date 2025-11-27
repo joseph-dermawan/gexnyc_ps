@@ -154,7 +154,7 @@ const App = () => {
             },
             {
               src: "/asset/panel1.1.2.jpg",
-              title: "Exhaust"
+              title: "Labour"
             },
             {
               src: "/asset/panel1.1.3.jpg",
@@ -206,14 +206,15 @@ const App = () => {
         React.createElement(
           "div",
           {
-            className: "w-full p-3 sm:p-6 border-y border-charcoal shadow-xl group transform scale-[0.95] transition-all duration-500"
+            className: "w-full p-3 sm:p-6 border-y border-charcoal shadow-xl group relative transform scale-[0.95] transition-all duration-500"
           },
           React.createElement(
             "div",
             {
-              className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
+              className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center polaroid-swap-hover", 
               style: {
                 backgroundImage: 'url("/asset/panel1.2.3.jpg")',
+                '--hover-image-url': 'url("/asset/panel1.2.4.jpg")', 
               }
             }
           ),
@@ -478,16 +479,29 @@ const App = () => {
         React.createElement(
           "div",
           {
-            className: "max-w-2xl w-full px-4"
+            className: "w-full px-4 grid grid-cols-2 gap-8 md:gap-12"
           },
+          // --- POLAROID 1 (Original) ---
           React.createElement(Polaroid, {
-            src: "/asset/panel3.3.jpg",
-            alt: "Final Product",
-            caption: "The past reframed as an product.",
-            location: "Global Capital",
+            src: "/asset/panel3.4.1.jpg",
+            alt: "Final Product - Past",
+            caption: "What says history more than a Sephora in a former factory?",
+            location: "Commodified History 1",
             aspectRatio: "portrait",
             rotation: "rotate-0",
-            className: "transform scale-100 md:scale-110 bg-black"
+            className: "transform scale-100 md:scale-100 bg-black"
+          }),
+          
+          // --- POLAROID 2 (New) ---
+          React.createElement(Polaroid, {
+            // Assuming a second image exists for the comparison/duality
+            src: "/asset/panel3.4.2.jpg", 
+            alt: "Final Product - Present",
+            caption: "Historical structures become the anchor for a new, sleek identity.",
+            location: "Commodified History 2",
+            aspectRatio: "portrait",
+            rotation: "rotate-0",
+            className: "transform scale-100 md:scale-100 bg-black"
           })
         )
       ),
@@ -628,6 +642,58 @@ const App = () => {
         React.createElement(
           "div",
           {
+            className: "w-full mb-16 px-0"
+          },
+          React.createElement(
+            "div",
+            {
+              className: "w-full p-3 sm:p-6 border-y border-gray-800 shadow-xl group transform scale-[0.95] transition-all duration-500"
+            },
+            React.createElement(
+              "div",
+              {
+                className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
+                style: {
+                  backgroundImage: 'url("/asset/hero-bg.jpg")',
+                }
+              }
+            ),
+            React.createElement(
+              "div",
+              {
+                className: "flex flex-row justify-between items-end border-t border-gray-800 pt-4 px-2"
+              },
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "p",
+                  {
+                    className: "font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-neonOrange mb-1"
+                  },
+                  "City of Dream, Built of Memory"
+                ),
+                React.createElement(
+                  "p",
+                  {
+                    className: "font-mono text-sm md:text-base text-gray-300 leading-tight"
+                  },
+                  "The city's industrial past is ever-present, woven into the fabric of its modern identity."
+                )
+              ),
+                React.createElement(
+                "div",
+                {
+                  className: "hidden md:block font-mono text-[10px] text-gray-600 tracking-widest"
+                },
+                "New York, 2025"
+              )
+            )
+          )
+        ),  
+        React.createElement(
+          "div",
+          {
             className: "max-w-3xl mx-auto text-center px-4"
           },
           React.createElement(
@@ -642,7 +708,7 @@ const App = () => {
               },
               "“"
             ),
-            "These buildings no longer merely store goods\u2014they store histories. In their overlaps and contradictions, architecture becomes a living archive, rewriting its memory with every new use.",
+            "In their wethered edges and rusted frames, these structures binds us to a collective memory, linking the city's root to its present ambition. They stand as silent witnesses to the city's evolution, embodying the tension between preservation and progress.",
             React.createElement(
               "span",
               {
@@ -652,6 +718,7 @@ const App = () => {
             )
           )
         ),
+        
         /* Memory Gradient Strip */
         React.createElement(
           "div",
