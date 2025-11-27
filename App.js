@@ -157,11 +157,11 @@ const App = () => {
               title: "Labour"
             },
             {
-              src: "/asset/panel1.1.3.jpg",
+              src: "/asset/panel1.1.3-2.jpg",
               title: "Structure"
             },
             {
-              src: "/asset/panel1.1.4.jpg",
+              src: "/asset/panel1.1.4-2.jpg",
               title: "Facade"
             },
           ].map((img, i) => React.createElement(
