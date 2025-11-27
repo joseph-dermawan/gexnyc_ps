@@ -43,7 +43,7 @@ const App = () => {
         React.createElement(
           "p",
           {
-            className: "font-mono text-neonOrange text-glow text-xs md:text-sm uppercase tracking-[0.4em] mb-6 animate-pulse"
+            className: "font-mono text-neonOrange text-glow text-xs md:text-sm uppercase tracking-[0.4em] mb-6 animate-flicker"
           },
           "GEX - NYC PHOTO ESSAY"
         ),
@@ -635,11 +635,11 @@ const App = () => {
           NarrativeBlock,
           {
             isQuote: true,
-            alignment: "center"
           },
           "Authenticity is preserved, edited, and monetized. The past reframed as a commodity in the global cultural marketplace."
         )
       )
+      
     ),
     React.createElement(FilmStrip, null),
     /* SECTION 4: REFLECTION */
@@ -860,7 +860,7 @@ const App = () => {
         React.createElement(
           "p",
           {
-            className: "font-mono text-neonOrange text-glow text-xs md:text-sm uppercase tracking-[0.4em] mb-6 animate-pulse text-center"
+            className: "font-mono text-neonOrange text-glow text-xs md:text-sm uppercase tracking-[0.4em] mb-6 animate-flicker text-center"
           },
           "curated by Joseph H. D."
         ),
