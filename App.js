@@ -324,7 +324,7 @@ const App = () => {
               {
                 className: "absolute top-4 left-4 z-20 bg-black/70 px-3 py-1 text-xs font-mono text-gray-300 border border-gray-600"
               },
-              "FRAME_06//Chelsea_Aerial (ARCHIVAL)"
+              "FRAME_06 // Chelsea_Aerial (ARCHIVAL)"
             ),
             React.createElement("img", {
               src: "/asset/panel2.1.1.jpg",
@@ -361,11 +361,11 @@ const App = () => {
             className: "grid md:grid-cols-2 gap-6 md:gap-8 mb-12"
           },
           React.createElement(Polaroid, {
-            src: "/asset/panel2.2.2.jpg",
+            src: "/asset/panel2.2.2-2.jpg",
             alt: "Machinery",
             location: "Rebrand",
             caption: "Machinery left behind. A new function.",
-            filter: "sepia",
+            filter: "",
             rotation: "rotate-0",
             className: "bg-black border-gray-800",
             filename: "FRAME_08 // Chelsea_Machinery 2025 "
@@ -524,7 +524,7 @@ const App = () => {
             {
               className: "w-full h-[100vh] overflow-hidden mb-4 bg-cover bg-center",
               style: {
-                backgroundImage: 'url("/asset/panel4.6.jpg")',
+                backgroundImage: 'url("/asset/panel4.6-2.jpg")',
               }
             }
           ),
@@ -606,7 +606,7 @@ const App = () => {
                 },
                 /* Glitch Photo Container using background-image for pseudo-elements */
                 React.createElement("div", {
-                  className: "w-full aspect-[4/3] grayscale group-hover:grayscale-0 transition-all duration-500 glitch-photo bg-cover bg-center",
+                  className: "w-full aspect-[4/3] grayscale group-hover:grayscale-0 transition-all duration-500 bg-cover bg-center",
                   style: {
                     backgroundImage: `url(${img.src})`
                   }
